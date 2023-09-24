@@ -51,5 +51,8 @@ vim.opt.fillchars = {
     foldclose = "▸"
 }
 
+vim.opt.keymap='russian-jcukenwin'
+vim.opt.langmap='ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz'
+
 vim.cmd([[highlight clear LineNr]])
 vim.cmd([[highlight clear SignColumn]])
