@@ -1,5 +1,4 @@
 vim.wo.number = true
-vim.wo.cursorline = true
 vim.wo.relativenumber = true
 
 vim.g.did_load_filetypes = 1
@@ -53,6 +52,8 @@ vim.opt.fillchars = {
 
 vim.opt.keymap='russian-jcukenwin'
 vim.opt.langmap='ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ;ABCDEFGHIJKLMNOPQRSTUVWXYZ,фисвуапршолдьтщзйкыегмцчня;abcdefghijklmnopqrstuvwxyz'
+vim.opt.iminsert=0
+
 
 vim.cmd([[highlight clear LineNr]])
 vim.cmd([[highlight clear SignColumn]])
