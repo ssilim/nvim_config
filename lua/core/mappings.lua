@@ -36,3 +36,6 @@ vim.keymap.set('n', '<leader>tv', ':ToggleTerm direction=vertical size=40<CR>')
 -- Neogit
 vim.keymap.set('n', '<leader>go', ':Neogit<CR>')
 vim.keymap.set('n', '<leader>gv', ':Neogit kind=split<CR>')
+
+-- Diff
+vim.keymap.set('n', '<leader>dc', ':DiffviewClose<CR>')
