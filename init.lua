@@ -26,3 +26,12 @@ require("plugins.neogit")
 require("plugins.debugger")
 
 require("neoscroll").setup()
+require("obsidian").setup({
+  workspaces = {
+    {
+      name = "personal",
+      path = "~/Documents/Obsidian",
+    },
+  },
+  }
+)
