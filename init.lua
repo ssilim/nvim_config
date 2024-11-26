@@ -4,6 +4,7 @@ require("core.plugins")
 require("core.colors")
 require("core.configs")
 
+
 -- Plugins config
 require("plugins.telescope")
 require("plugins.lsp")
