@@ -7,7 +7,7 @@ lspconfig.pyright.setup {
     ["textDocument/publishDiagnostics"] = function(...) end,
   },
 }
-lspconfig.tsserver.setup {}
+lspconfig.ts_ls.setup {}
 lspconfig.prismals.setup {}
 lspconfig.cssls.setup {
     capabilities = capabilities

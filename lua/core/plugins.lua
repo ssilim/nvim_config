@@ -10,6 +10,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+    {"epwalsh/obsidian.nvim"},
     {
         "karb94/neoscroll.nvim"
     },
