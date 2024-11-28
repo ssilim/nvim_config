@@ -10,6 +10,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+    {
+    "HallerPatrick/py_lsp.nvim",
+    dependencies = { "dharmx/toml.nvim" },
+    },
     {"epwalsh/obsidian.nvim"},
     {
         "karb94/neoscroll.nvim"

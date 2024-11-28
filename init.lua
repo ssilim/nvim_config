@@ -4,7 +4,6 @@ require("core.plugins")
 require("core.colors")
 require("core.configs")
 
-
 -- Plugins config
 require("plugins.telescope")
 require("plugins.lsp")
@@ -27,3 +26,13 @@ require("plugins.neogit")
 require("plugins.debugger")
 
 require("neoscroll").setup()
+require("obsidian").setup({
+  workspaces = {
+    {
+      name = "personal",
+      path = "~/Documents/Obsidian",
+    },
+  },
+  }
+)
+require("plugins.py_lsp")
