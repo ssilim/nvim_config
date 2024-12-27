@@ -12,6 +12,8 @@ lspconfig.prismals.setup {}
 lspconfig.cssls.setup {
     capabilities = capabilities
 }
+
+
 lspconfig.golangci_lint_ls.setup {}
 -- lspconfig.rust_analyzer.setup {
 --   settings = {
