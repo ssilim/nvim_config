@@ -27,3 +27,4 @@ require("plugins.neogit")
 require("plugins.debugger")
 
 require("neoscroll").setup()
+require("venv-selector").setup()
