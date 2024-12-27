@@ -12,6 +12,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     {
      'linux-cultist/venv-selector.nvim',
+     lazy = false,
+     branch = "regexp",
      dependencies = { 'neovim/nvim-lspconfig', 'nvim-telescope/telescope.nvim', 'mfussenegger/nvim-dap-python' },
     },
     {"epwalsh/obsidian.nvim"},
