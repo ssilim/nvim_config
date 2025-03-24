@@ -28,3 +28,14 @@ require("plugins.debugger")
 
 require("neoscroll").setup()
 require("venv-selector").setup()
+require("obsidian").setup({
+    workspaces = {
+        {
+          name = "personal",
+          path = "~/Documents/neObsidian",
+        },
+    },
+})
+
+
+
