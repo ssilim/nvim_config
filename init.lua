@@ -38,4 +38,3 @@ require("obsidian").setup({
 })
 
 
-

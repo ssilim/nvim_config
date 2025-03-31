@@ -7,7 +7,11 @@ wk.add({
   { "<leader>f1", hidden = true }, -- hide this keymap
   { "<leader>w", proxy = "<c-w>", group = "windows" }, -- proxy to window mappings
   { "<leader>vs", "<cmd>VenvSelect<cr>", desc = "Select venv", mode = "n" },
-  { "<leader>kq", "<cmd>ObsidianQuickSwitch<cr>", desc = "Select node", mode = "n" },
+  { "<leader>oq", "<cmd>ObsidianQuickSwitch<cr>", desc = "Obsidian select note", mode = "n" },
+  { "<leader>os", "<cmd>ObsidianSearch<cr>", desc = "Obsidian search", mode = "n" },
+  { "<leader>ot", "<cmd>ObsidianTags<cr>", desc = "Obsidian tags", mode = "n" },
+  { "<leader>ow", "<cmd>ObsidianWorkspace<cr>", desc = "Obsidian choose workspace", mode = "n" },
+  { "<leader>oo", "<cmd>ObsidianOpen<cr>", desc = "Obsidian open app", mode = "n" },
   -- { "<leader>vc", "<cmd>VenvSelectCached<cr>", desc = "Find File", mode = "n" },
   { "<leader>b", group = "buffers", expand = function()
       return require("which-key.extras").expand.buf()
