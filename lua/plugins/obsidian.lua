@@ -33,7 +33,7 @@
 
   daily_notes = {
     -- Optional, if you keep daily notes in a separate directory.
-    folder = "notes/dailies",
+    folder = "notes/daily",
     -- Optional, if you want to change the date format for the ID of daily notes.
     date_format = "%Y-%m-%d",
     -- Optional, if you want to change the date format of the default alias of daily notes.
@@ -157,7 +157,7 @@
 
   -- Optional, for templates (see below).
   templates = {
-    folder = "templates",
+    folder = "_config/templates",
     date_format = "%Y-%m-%d",
     time_format = "%H:%M",
     -- A map for custom variables, the key should be the variable and the value a function

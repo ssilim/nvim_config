@@ -11,6 +11,29 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     {
+      "tadmccorkle/markdown.nvim",
+      ft = "markdown", -- or 'event = "VeryLazy"'
+      opts = {
+        -- configuration here or empty for defaults
+      },
+    },
+    { 'Nedra1998/nvim-mdlink' },
+    {
+      '7sedam7/perec.nvim',
+      dependencies = {
+        'nvim-telescope/telescope.nvim', -- if Telescope is loaded otherwise, remove from here for faster startup.
+        'folke/which-key.nvim' -- optional
+      },
+      -- init = function()
+      --   require("perec").setup()
+      -- end,
+    },
+    -- {
+    --     "lukas-reineke/headlines.nvim",
+    --     dependencies = "nvim-treesitter/nvim-treesitter",
+    --     config = true, -- or `opts = {}`
+    -- },
+    {
      'linux-cultist/venv-selector.nvim',
      lazy = false,
      branch = "regexp",
@@ -34,11 +57,12 @@ require("lazy").setup({
         "ibhagwan/fzf-lua",              -- optional
       },
       },
-    {
-        'nvim-telescope/telescope.nvim',
-        -- tag = '0.1.5',
-        dependencies = {'nvim-lua/plenary.nvim'}
-    }, {'cooperuser/glowbeam.nvim'}, {'joshdick/onedark.vim'},
+    -- {
+    --     'nvim-telescope/telescope.nvim',
+    --     -- tag = '0.1.5',
+    --     dependencies = {'nvim-lua/plenary.nvim'}
+    -- },
+    {'cooperuser/glowbeam.nvim'}, {'joshdick/onedark.vim'},
     {'rebelot/kanagawa.nvim'},
     {'nvim-treesitter/nvim-treesitter'}, {'neovim/nvim-lspconfig'},
     {'hrsh7th/cmp-nvim-lsp'}, {'hrsh7th/cmp-buffer'}, {'hrsh7th/cmp-path'},

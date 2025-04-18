@@ -30,11 +30,22 @@ require("neoscroll").setup()
 require("venv-selector").setup()
 require("obsidian").setup({
     workspaces = {
-        {
-          name = "personal",
-          path = "~/Documents/neObsidian",
-        },
+       {
+         name = "personal",
+         path = "~/Documents/neObsidian",
+       },
+   },
+    templates = {
+      folder = "_config/templates",
+      date_format = "%Y-%m-%d",
+      time_format = "%H:%M",
+      -- A map for custom variables, the key should be the variable and the value a function
+      substitutions = {},
     },
 })
+require('nvim-mdlink').setup({
+  keymap = true,
+  cmp = true
+})
 
-
+require("markdown")
